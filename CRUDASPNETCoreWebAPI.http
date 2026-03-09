@@ -1,0 +1,42 @@
+@CRUDASPNETCoreWebAPI_HostAddress = https://localhost:7115
+
+GET {{CRUDASPNETCoreWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{CRUDASPNETCoreWebAPI_HostAddress}}/api/certdata
+
+###
+
+POST {{CRUDASPNETCoreWebAPI_HostAddress}}/api/certdata
+Content-Type: application/json
+
+{
+  "code": "AWSCDA",
+  "description": "AWS Certified Developer - Associate",
+  "examDate": "2026-02-03"
+}
+
+###
+
+@id=0
+PUT {{CRUDASPNETCoreWebAPI_HostAddress}}/api/certdata/{{id}}
+Content-Type: application/json
+
+
+{
+  "code": "AWSCDA",
+  "description": "AWS Certified Developer - Associate Updated",
+  "examDate": "2026-02-03"
+}
+###
+
+@code=AWSCDA
+DELETE {{CRUDASPNETCoreWebAPI_HostAddress}}/api/certdata/{{code}}
+
+###
+@code=AWSCDA
+GET {{CRUDASPNETCoreWebAPI_HostAddress}}/api/certdata/{{code}}
+
+###
