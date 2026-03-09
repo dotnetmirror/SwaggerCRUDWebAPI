@@ -1,10 +1,10 @@
-﻿using CRUDASPNETCoreWebAPI.Data;
-using CRUDASPNETCoreWebAPI.Model;
+﻿using SwaggerCRUDWebAPI.Data;
+using SwaggerCRUDWebAPI.Model;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace CRUDASPNETCoreWebAPI.Controllers
+namespace SwaggerCRUDWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

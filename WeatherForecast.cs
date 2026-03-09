@@ -1,4 +1,4 @@
-namespace CRUDASPNETCoreWebAPI
+namespace SwaggerCRUDWebAPI
 {
     public class WeatherForecast
     {

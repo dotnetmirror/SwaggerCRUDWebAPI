@@ -1,4 +1,4 @@
-using CRUDASPNETCoreWebAPI.Data;
+using SwaggerCRUDWebAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

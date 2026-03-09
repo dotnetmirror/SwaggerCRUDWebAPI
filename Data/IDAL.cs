@@ -1,6 +1,6 @@
-﻿using CRUDASPNETCoreWebAPI.Model;
+﻿using SwaggerCRUDWebAPI.Model;
 
-namespace CRUDASPNETCoreWebAPI.Data
+namespace SwaggerCRUDWebAPI.Data
 {
     public interface IDAL
     {

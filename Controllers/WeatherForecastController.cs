@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace CRUDASPNETCoreWebAPI.Controllers
+namespace SwaggerCRUDWebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

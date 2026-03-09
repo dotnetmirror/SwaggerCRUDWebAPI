@@ -1,8 +1,8 @@
-﻿using CRUDASPNETCoreWebAPI.Model;
+﻿using SwaggerCRUDWebAPI.Model;
 using Microsoft.Data.SqlClient;
 using System.Data;
 
-namespace CRUDASPNETCoreWebAPI.Data
+namespace SwaggerCRUDWebAPI.Data
 {
     public class DAL : IDAL
     {

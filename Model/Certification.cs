@@ -1,4 +1,4 @@
-﻿namespace CRUDASPNETCoreWebAPI.Model
+﻿namespace SwaggerCRUDWebAPI.Model
 {
     public class Certification
     {
