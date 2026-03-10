@@ -16,7 +16,10 @@ namespace SwaggerCRUDWebAPI.Controllers
         {
             _data = context;
         }
-
+        /// <summary>
+        /// API Endpoint retrun list of certifications
+        /// </summary>
+        /// <returns></returns>
         // GET: api/<CertDataController>
         [HttpGet]
         public IEnumerable<Certification> Get()
@@ -26,7 +29,11 @@ namespace SwaggerCRUDWebAPI.Controllers
 
             return certs;
         }
-
+        /// <summary>
+        /// return specific certifcation by code
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         // GET api/<CertDataController>/5
         [HttpGet("{code}")]
         public Certification Get(string code)
@@ -38,6 +45,24 @@ namespace SwaggerCRUDWebAPI.Controllers
 
             return cert;
         }
+        /// <summary>
+        /// To post cerftication
+        /// </summary>
+        /// <param name="cert"></param>
+        /// <returns></returns>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST //api/certdata
+        ///     {
+        ///        "code": "AWSCDA",
+        ///        "description": "AWS Certified Developer - Associate",
+        ///        "examDate": "2026-02-03"
+        ///     }
+        ///
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
 
         // POST api/<CertDataController>
         [HttpPost]
@@ -47,14 +72,22 @@ namespace SwaggerCRUDWebAPI.Controllers
 
             return Ok();
         }
-
+        /// <summary>
+        /// To update certfiation
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="cert"></param>
         // PUT api/<CertDataController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] Certification cert)
         {
             _data.Update(cert);
         }
-
+        /// <summary>
+        /// To Delete Certification
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         // DELETE api/<CertDataController>/5
         [HttpDelete("{code}")]
         public IActionResult Delete(string code)
